@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            background: url(https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5004.jpg?size=626&ext=jpg&uid=R82283323&ga=GA1.2.1305872289.1683346728&semt=sph) no-repeat center;
+            height: 900px;
+            background-size: cover;
+            color: white;
+            font-family: 'Bree Serif', serif;
+        }
+        .left
+        {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 100px;
+            top: 25px;
+        }
+        .mid
+        {
+           display: block;
+           /* border: 2px solid brown; */
+           width: 40%;
+           margin: 40px auto;
+        }
+        .right
+        {
+           display: inline-block;
+           /* border: 2px solid yellow; */
+           position: absolute;
+           right: 30px;
+           top: 30px;
+        }
+        .navbar li 
+        {
+            display: inline-block;
+        }
+        .navbar li a
+        {
+            color: white;
+            padding: 18px 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        #logo
+        {
+            display: block;
+            margin: auto;
+            height: 50px;
+            width: 50px;
+            border-radius: 33px;
+        }
+        .left div
+        {
+            font-size: 22px;
+        }
+         .navbar  li a:hover
+         {
+            text-decoration: underline;
+            color: rgb(221, 182, 110);
+         }
+         .navbar .active
+         {
+            text-decoration: underline;
+            color: rgb(206, 160, 74);
+         }
+         .btn
+         {
+            margin: 6px 6px;
+            padding: 4px 4px;
+            cursor: pointer;
+            font-size: 16px;
+            /* background-color: rgb(19, 9, 9); */
+            color: white;
+            font-family: 'Bree Serif', serif;
+            background-color: darkcyan;
+         }
+         .btn:hover
+         {
+            background-color: darkcyan;
+         }
+         .container
+         {
+            border: 2px solid rgb(238, 226, 226);
+            width: 40%;
+            /* height: 40%; */
+            margin: 110px 30px;
+            padding: 50px 50px;
+            text-align: center;
+            border-radius: 20px;
+            font-family: 'Bree Serif', serif;
+         }
+         .form-group input
+         {
+            text-align: center;
+            width: 50%;
+            margin: 5px 6px;
+            padding: 10px 10px;
+            font-family: 'Bree Serif', serif;
+            font-size: 15px;
+         }
+         .container .btn
+         {
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            background-color: darkcyan;
+            font-size: 18px;
+         }
+         .left div
+         {
+            line-height: 40px;
+         }
+         .container h1
+         {
+            text-decoration: underline;
+            font-size: 2.3rem;
+         }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://img.freepik.com/free-vector/hard-athletic-fitness-club-gym-vintage-emblem-bodybuilder-arm-with-barbell_74855-11247.jpg?size=626&ext=jpg&uid=R82283323&ga=GA1.1.1305872289.1683346728&semt=ais" id="logo">
+            <div>
+                Fitness Gym
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Wellcome to our Fitness Gym</h1>
+        <form action="none.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Locality">
+            </div>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+</body>
+</html>
